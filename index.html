@@ -30,42 +30,38 @@
           </div>
         </nav>
         <main>
-          <!-- <div class="main"> -->
-          <!-- <div class="contact-container">
-            <ul>
-           
-            </ul>
-          </div> -->
-          <div class="name-container">
+          <div class="name-container hidden" id="home">
             <h2>Hi, i am</h2>
             <h2 id="name"></h2>
             <h2>Frontend Developer</h2>
             <button class="resume">RESUME</button>
             <button>LET'S CHAT</button>
           </div>
-          <!-- </div> -->
-          <div class="nav-container">
-            <ul>
-              <li>
-                <a href=""><i class="fas fa-home"></i></a>
-              </li>
-              <li>
-                <a href=""><i class="fas fa-user"></i></a>
-              </li>
-              <li>
-                <a href=""><i class="fas fa-tasks"></i></a>
-              </li>
-              <li>
-                <a href=""><i class="fas fa-address-book"></i></a>
-              </li>
-              <li>
-                <a href=""> <i class="fab fa-twitter-square"></i></a>
-              </li>
-            </ul>
-          </div>
         </main>
+
+        <div class="nav-container">
+          <ul>
+            <li>
+              <a href="#home"><i class="fas fa-home"></i></a>
+            </li>
+            <li>
+              <a href="#about"><i class="fas fa-user"></i></a>
+            </li>
+            <li>
+              <a href="#project"><i class="fas fa-tasks"></i></a>
+            </li>
+            <li>
+              <a href="#contact"><i class="fas fa-address-book"></i></a>
+            </li>
+            <li>
+              <a href="https://twitter.com/zakariyahrobia3">
+                <i class="fab fa-twitter-square"></i
+              ></a>
+            </li>
+          </ul>
+        </div>
       </div>
-      <div class="about-container">
+      <div class="about-container hidden" id="about">
         <h2>About Me</h2>
         <div>
           <p>
@@ -75,21 +71,37 @@
           </p>
         </div>
         <div class="skills">
-          <i class="fab fa-html5"></i>
-          <i class="fab fa-css3"></i>
-          <i class="fab fa-js"></i>
-          <i class="fab fa-git"></i>
-          <i class="fab fa-github"></i>
-          <i class="fab fa-react"></i>
+          <p><i class="fab fa-html5"></i> HTML</p>
+          <p><i class="fab fa-css3"></i> CSS</p>
+          <p><i class="fab fa-js"></i> Javascript</p>
+          <p><i class="fab fa-git"></i> Git</p>
+          <p><i class="fab fa-github"></i> GitHub</p>
+          <p><i class="fab fa-react"></i> React</p>
         </div>
       </div>
-      <div class="project">
-        <img src="image/dashboard.png" alt="" srcset="" />
-        <img src="image/bank page.png" alt="" srcset="" />
-        <img src="image/dashboard.png" alt="" srcset="" />
-        <img src="image/dashboard.png" alt="" srcset="" />
+      <div class="project hidden" id="project">
+        <div class="project-img">
+          <img src="image/dashboard.png" alt="" srcset="" />
+          <p class="git">git reposity</p>
+          <p class="netlify">live demo</p>
+        </div>
+        <div class="project-img">
+          <img src="image/bank page.png" alt="" srcset="" />
+          <p class="git">git reposity</p>
+          <p class="netlify">live demo</p>
+        </div>
+        <div class="project-img">
+          <img src="image/dashboard.png" alt="" srcset="" />
+          <p class="git">git reposity</p>
+          <p class="netlify">live demo</p>
+        </div>
+        <div class="project-img">
+          <img src="image/dashboard.png" alt="" srcset="" />
+          <p class="git">git reposity</p>
+          <p class="netlify">live demo</p>
+        </div>
       </div>
-      <div class="contact">
+      <div class="contact hidden" id="contact">
         <form action="">
           <input type="text" name="" id="" placeholder="Name" />
           <textarea name="" id="" cols="30" rows="10">Send message...</textarea>
