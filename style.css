@@ -50,7 +50,7 @@ nav {
   background-color: black;
   width: 50px;
   height: 30px;
-  position: fixed;
+  position: absolute;
   border-radius: 10px;
   display: flex;
   justify-content: space-evenly;
@@ -205,6 +205,11 @@ button.active {
   background: #eaecf9;
   box-shadow: 20px 20px 60px #c7c9d4, -20px -20px 60px #ffffff;
 }
+.container .project-container.active .project-img {
+  background: #292828;
+  box-shadow: 20px 20px 60px #232222, -20px -20px 60px #2f2e2e;
+  color: white;
+}
 .container .project-img .text-container {
   padding: 1rem;
   text-align: left;
@@ -344,8 +349,11 @@ textarea {
     padding-bottom: 0rem;
   }
   .container nav .toggleMode label {
-    right: 5rem;
+    right: 1rem;
+    position: fixed;
+    background-color: white;
   }
+
   .ball {
     background-color: black;
   }
@@ -410,18 +418,10 @@ textarea {
     width: 93vw;
     /* margin: auto; */
   }
-  .container nav .toggleMode label {
-    right: 1rem;
-    background-color: white;
-  }
+
   .container .nav-container ul {
     position: fixed;
     bottom: 0;
     right: 2rem;
-  }
-  .container .project-container.active .project-img {
-    background: #292828;
-    box-shadow: 20px 20px 60px #232222, -20px -20px 60px #2f2e2e;
-    color: white;
   }
 }
