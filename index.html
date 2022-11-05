@@ -37,31 +37,31 @@
             <button class="resume">RESUME</button>
             <button>LET'S CHAT</button>
           </div>
-        </main>
 
-        <div class="nav-container">
-          <ul>
-            <li>
-              <a href="#home"><i class="fas fa-home"></i></a>
-            </li>
-            <li>
-              <a href="#about"><i class="fas fa-user"></i></a>
-            </li>
-            <li>
-              <a href="#project"><i class="fas fa-tasks"></i></a>
-            </li>
-            <li>
-              <a href="#contact"><i class="fas fa-address-book"></i></a>
-            </li>
-            <li>
-              <a href="https://twitter.com/zakariyahrobia3">
-                <i class="fab fa-twitter-square"></i
-              ></a>
-            </li>
-          </ul>
-        </div>
+          <div class="nav-container">
+            <ul>
+              <li>
+                <a href="#home"><i class="fas fa-home"></i></a>
+              </li>
+              <li>
+                <a href="#about"><i class="fas fa-user"></i></a>
+              </li>
+              <li>
+                <a href="#project"><i class="fas fa-tasks"></i></a>
+              </li>
+              <li>
+                <a href="#contact"><i class="fas fa-address-book"></i></a>
+              </li>
+              <li>
+                <a href="https://twitter.com/zakariyahrobia3">
+                  <i class="fab fa-twitter-square"></i
+                ></a>
+              </li>
+            </ul>
+          </div>
+        </main>
       </div>
-      <div class="about-container hidden" id="about">
+      <div class="about-container hiddenRight" id="about">
         <h2>About Me</h2>
         <div>
           <p>
@@ -79,35 +79,55 @@
           <p><i class="fab fa-react"></i> React</p>
         </div>
       </div>
-      <div class="project hidden" id="project">
-        <div class="project-img">
-          <img src="image/dashboard.png" alt="" srcset="" />
-          <p class="git">git repository</p>
-          <p class="netlify">live demo</p>
-        </div>
-        <div class="project-img">
-          <img src="image/bank page.png" alt="" srcset="" />
-          <p class="git">git reposity</p>
-          <p class="netlify">live demo</p>
-        </div>
-        <div class="project-img">
-          <img src="image/dashboard.png" alt="" srcset="" />
-          <p class="git">git repository</p>
-          <p class="netlify">live demo</p>
-        </div>
-        <div class="project-img">
-          <img src="image/dashboard.png" alt="" srcset="" />
-          <p class="git">git repository</p>
-          <p class="netlify">live demo</p>
+
+      <div class="project-container hiddenTop" id="project">
+        <h1>MY PROJECTS</h1>
+        <div class="project">
+          <div class="project-img">
+            <img src="image/dashboard.png" alt="" srcset="" />
+            <p class="git">git repository</p>
+            <p class="netlify">live demo</p>
+            <div class="text-container">
+              <p>An E-commerce Website build with HTML, CSS AND Javascript</p>
+            </div>
+          </div>
+          <div class="project-img">
+            <img src="image/bank page.png" alt="" srcset="" />
+            <p class="git">git reposity</p>
+            <p class="netlify">live demo</p>
+            <div class="text-container">
+              <p>An E-commerce Website build with HTML, CSS AND Javascript</p>
+            </div>
+          </div>
+          <div class="project-img">
+            <img src="image/dashboard.png" alt="" srcset="" />
+            <p class="git">git repository</p>
+            <p class="netlify">live demo</p>
+            <div class="text-container">
+              <p>An E-commerce Website build with HTML, CSS AND Javascript</p>
+            </div>
+          </div>
+          <div class="project-img">
+            <img src="image/dashboard.png" alt="" srcset="" />
+            <p class="git">git repository</p>
+            <p class="netlify">live demo</p>
+            <div class="text-container">
+              <p>An E-commerce Website build with HTML, CSS AND Javascript</p>
+            </div>
+          </div>
         </div>
       </div>
-      <div class="contact hidden" id="contact">
+      <div class="contact" id="contact">
         <form action="POST" name="contact" data-netlify="true">
-          <input type="email" name="email" id="" placeholder="Name" />
-          <textarea name="message" id="" cols="30" rows="10">
-Send message...</textarea
-          >
-          <button>Submit</button>
+          <input type="email" name="email" id="" placeholder="Email" />
+          <textarea
+            name="message"
+            id=""
+            cols="20"
+            rows="6"
+            placeholder="Send message..."
+          ></textarea>
+          <button class="contact-btn">Submit</button>
         </form>
         <ul>
           <a href=""> <i class="fab fa-twitter-square"></i></a>
@@ -119,6 +139,9 @@ Send message...</textarea
           </li>
           <li>
             <a href=""><i class="fab fa-instagram-square"></i></a>
+          </li>
+          <li>
+            <a href=""><i class="fab fa-github"></i> </a>
           </li>
         </ul>
       </div>

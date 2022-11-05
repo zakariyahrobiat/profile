@@ -6,7 +6,7 @@ button = document.querySelectorAll("button");
 navContainer = document.querySelector(".nav-container");
 
 aboutContainer = document.querySelector(".about-container");
-project = document.querySelector(".project");
+project = document.querySelector(".project-container");
 const text = "Zakariyah Robiah";
 setInterval(writeName, 200);
 let index = 1;
@@ -37,7 +37,7 @@ const observer = new IntersectionObserver((entries) => {
     }
   });
 });
-const hidden = document.querySelectorAll(".hidden");
+const hidden = document.querySelectorAll(".hidden, .hiddenRight, .hiddenTop");
 hidden.forEach((el) => observer.observe(el));
 
 const handleSubmit = (event) => {
