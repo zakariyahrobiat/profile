@@ -4,6 +4,7 @@ body = document.querySelector("body");
 bodyEl = document.querySelector(".body");
 button = document.querySelectorAll("button");
 navContainer = document.querySelector(".nav-container");
+social = document.querySelector(".social");
 
 aboutContainer = document.querySelector(".about-container");
 project = document.querySelector(".project-container");
@@ -27,19 +28,20 @@ mode.addEventListener("change", () => {
     button[i].classList.toggle("active");
   }
   project.classList.toggle("active");
+  social.classList.toggle("active");
 });
-const observer = new IntersectionObserver((entries) => {
-  entries.forEach((entry) => {
-    if (entry.isIntersecting) {
-      entry.target.classList.add("show");
-    } else {
-      entry.target.classList.remove("show");
-    }
-  });
-});
-const hidden = document.querySelectorAll(".hidden, .hiddenRight, .hiddenTop");
-hidden.forEach((el) => observer.observe(el));
-
+// const observer = new IntersectionObserver((entries) => {
+//   entries.forEach((entry) => {
+//     if (entry.isIntersecting) {
+//       entry.target.classList.add("show");
+//     } else {
+//       entry.target.classList.remove("show");
+//     }
+//   });
+// });
+// const hidden = document.querySelectorAll(".hidden, .hiddenRight, .hiddenTop");
+// hidden.forEach((el) => observer.observe(el));
+AOS.init({ duration: 1200, once: false, offset: 300, easing: "ease-in-out" });
 const handleSubmit = (event) => {
   event.preventDefault();
 
@@ -53,6 +55,8 @@ const handleSubmit = (event) => {
   })
     .then(() => alert("Form successfully submitted"))
     .catch((error) => alert(error));
+  document.querySelector(".email").value = "";
+  document.querySelector(".message").value = "";
 };
 
 document.querySelector("form").addEventListener("submit", handleSubmit);

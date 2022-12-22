@@ -10,8 +10,9 @@
       integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm"
       crossorigin="anonymous"
     />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
     <link rel="stylesheet" href="style.css" />
-    <title>Document</title>
+    <title>Robiah</title>
   </head>
   <body>
     <div class="container">
@@ -30,12 +31,18 @@
           </div>
         </nav>
         <main>
-          <div class="name-container hidden" id="home">
-            <h2>Hi, i am</h2>
-            <h2 id="name"></h2>
-            <h2>Frontend Developer</h2>
-            <button class="resume">RESUME</button>
-            <button>LET'S CHAT</button>
+          <div>
+            <div class="name-container" id="home" data-aos="fade-right">
+              <h2>Hi, i am 👋</h2>
+              <h2 id="name"></h2>
+              <h2>Frontend Developer</h2>
+              <a href="image/Zakariyah Robiah CV.pdf" target="_blank"
+                ><button class="resume">RESUME</button></a
+              >
+              <a href="mailto:zakariyahrobiat2018@gmail.com"
+                ><button>LET'S CHAT</button></a
+              >
+            </div>
           </div>
 
           <div class="nav-container">
@@ -61,91 +68,191 @@
           </div>
         </main>
       </div>
-      <div class="about-container hiddenRight" id="about">
+      <div class="about-container" id="about" data-aos="fade-left">
         <h2>About Me</h2>
         <div>
           <p>
-            I am a frontend developer passionate about building fully
-            FUNCTIONAL, RESPONSIVE, AND USER'S FRIENDLY websites with my skills.
-            I love coding and always strive to write a better code with :
+            I am a frontend developer passionate about coding and contributing
+            to open source. I love coding and always strive to write a better
+            code. I love to contribute to open source project because it help me
+            learn new stuff and it create environment to work with team.
           </p>
         </div>
-        <div class="skills">
-          <p><i class="fab fa-html5"></i> HTML</p>
-          <p><i class="fab fa-css3"></i> CSS</p>
-          <p><i class="fab fa-js"></i> Javascript</p>
-          <p><i class="fab fa-git"></i> Git</p>
-          <p><i class="fab fa-github"></i> GitHub</p>
-          <p><i class="fab fa-react"></i> React</p>
+        <div class="mySkills">
+          <h4>My skills and technologies</h4>
+          <div class="skills">
+            <p><i class="fab fa-html5"></i> HTML</p>
+            <p><i class="fab fa-css3"></i> CSS</p>
+            <p><i class="fab fa-js"></i> Javascript</p>
+            <p><i class="fab fa-git"></i> Git</p>
+            <p><i class="fab fa-github"></i> GitHub</p>
+            <p><i class="fab fa-react"></i> React</p>
+            <p><i class="fab fa-tailwindcss"></i>TailwindCSS</p>
+            <p><i class="fab fa-firebase"></i>Firebase</p>
+          </div>
         </div>
       </div>
 
-      <div class="project-container hiddenTop" id="project">
+      <div class="project-container" id="project" data-aos="fade-up-left">
         <h1>MY PROJECTS</h1>
         <div class="project">
           <div class="project-img">
-            <img src="image/dashboard.png" alt="" srcset="" />
-            <p class="git">git repository</p>
-            <p class="netlify">live demo</p>
+            <img src="image/ecommerce.png" alt="" srcset="" />
+            <a
+              target="_blank"
+              href="https://github.com/zakariyahrobiat/food-website.git"
+              ><p class="git">git repository</p></a
+            >
+            <a target="_blank" href="https://robiah-food.netlify.app/">
+              <p class="netlify">live demo</p></a
+            >
             <div class="text-container">
-              <p>An E-commerce Website build with HTML, CSS AND Javascript</p>
+              <p>
+                A Responsive E-commerce website built with React, Context API
+                and TailwindCSS.
+              </p>
             </div>
           </div>
           <div class="project-img">
-            <img src="image/bank page.png" alt="" srcset="" />
-            <p class="git">git reposity</p>
-            <p class="netlify">live demo</p>
+            <img src="image/opensource.png" alt="" srcset="" />
+            <a
+              target="_blank"
+              href="https://github.com/zakariyahrobiat/I4G-OPENSOURCE-FRONTEND-PROJECT-2022.git"
+              ><p class="git">git reposity</p></a
+            >
+            <a
+              target="_blank"
+              href="https://deploy-preview-191--i4g.netlify.app/delete-product"
+              ><p class="netlify">live demo</p></a
+            >
             <div class="text-container">
-              <p>An E-commerce Website build with HTML, CSS AND Javascript</p>
+              <p>
+                Techmart is an opensource project built with React, Context API
+                and TailwindCSS.
+              </p>
             </div>
           </div>
           <div class="project-img">
-            <img src="image/dashboard.png" alt="" srcset="" />
-            <p class="git">git repository</p>
-            <p class="netlify">live demo</p>
+            <img src="image/cowrywise.png" alt="" srcset="" />
+            <a
+              href="https://github.com/zakariyahrobiat/cowrywise-clone.git"
+              target="_blank"
+              ><p class="git">git repository</p></a
+            >
+            <a
+              target="_blank"
+              href="https://robiah-cowrywise-clone.netlify.app/"
+              ><p class="netlify">live demo</p></a
+            >
             <div class="text-container">
-              <p>An E-commerce Website build with HTML, CSS AND Javascript</p>
+              <p>
+                A clone of cowrywise app built with React, Context API and
+                TailwindCSS.
+              </p>
             </div>
           </div>
           <div class="project-img">
-            <img src="image/dashboard.png" alt="" srcset="" />
-            <p class="git">git repository</p>
-            <p class="netlify">live demo</p>
+            <img src="image/tracker.png" alt="" srcset="" />
+            <a
+              target="_blank"
+              href="https://github.com/zakariyahrobiat/ip-address-tracker.git"
+              ><p class="git">git repository</p></a
+            >
+            <a target="_blank" href="https://ip-tracker-ng.netlify.app/">
+              <p class="netlify">live demo</p>
+            </a>
             <div class="text-container">
-              <p>An E-commerce Website build with HTML, CSS AND Javascript</p>
+              <p>
+                IP Address tracker help to track loction, Time Zone and ISP when
+                IP address is provided.
+              </p>
+            </div>
+          </div>
+          <div class="project-img">
+            <img src="image/grocery.png" alt="" srcset="" />
+            <a
+              href="https://github.com/zakariyahrobiat/grocery-bud.git"
+              target="_blank"
+              ><p class="git">git repository</p></a
+            >
+            <a target="_blank" href="https://robiah-grocery.netlify.app/">
+              <p class="netlify">live demo</p>
+            </a>
+            <div class="text-container">
+              <p>
+                Grocery Bud is a web App that help user's add, Edit, and delete
+                list of their groceries.
+              </p>
+            </div>
+          </div>
+          <div class="project-img">
+            <img src="image/quiz.png" alt="" srcset="" />
+            <a
+              href="https://github.com/zakariyahrobiat/quiz.git"
+              target="_blank"
+              ><p class="git">git repository</p></a
+            >
+            <a target="_blank" href="https://robiah-quiz.netlify.app/">
+              <p class="netlify">live demo</p>
+            </a>
+            <div class="text-container">
+              <p>
+                A Multiple choice question Web Application which provide the
+                score at the end.
+              </p>
             </div>
           </div>
         </div>
       </div>
-      <div class="contact" id="contact">
+      <div class="contact" id="contact" data-aos="fade-down">
         <form action="POST" name="contact" data-netlify="true">
-          <input type="email" name="email" id="" placeholder="Email" />
+          <input
+            type="email"
+            name="email"
+            id=""
+            placeholder="Email"
+            class="email"
+          />
           <textarea
             name="message"
+            class="message"
             id=""
-            cols="20"
-            rows="6"
+            cols="5"
+            rows="3"
             placeholder="Send message..."
           ></textarea>
           <button class="contact-btn">Submit</button>
         </form>
+      </div>
+      <div class="social">
         <ul>
-          <a href=""> <i class="fab fa-twitter-square"></i></a>
+          <a href="https://twitter.com/zakariyahrobia3">
+            <i class="fab fa-twitter-square"></i
+          ></a>
           <li>
-            <a href=""><i class="fab fa-linkedin"></i></a>
+            <a href="https://www.linkedin.com/in/robiat-zakariyah-743452225"
+              ><i class="fab fa-linkedin"></i
+            ></a>
           </li>
           <li>
-            <a href=""><i class="fab fa-whatsapp-square"></i></a>
+            <a href="https://wa.me/qr/ORJ5KEUDV2JEP1"
+              ><i class="fab fa-whatsapp-square"></i
+            ></a>
           </li>
           <li>
-            <a href=""><i class="fab fa-instagram-square"></i></a>
+            <a href="https://www.instagram.com/zakariyahrobiat2018?r=nametag"
+              ><i class="fab fa-instagram-square"></i
+            ></a>
           </li>
           <li>
-            <a href=""><i class="fab fa-github"></i> </a>
+            <a href="https://github.com/zakariyahrobiat"
+              ><i class="fab fa-github"></i>
+            </a>
           </li>
         </ul>
       </div>
     </div>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script src="./script.js"></script>
   </body>
 </html>
