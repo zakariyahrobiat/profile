@@ -193,7 +193,7 @@ button.active {
   color: white;
 }
 .container .about-container p {
-  text-align: left;
+  text-align: justify;
 }
 .container .project-container {
   /* height: 600px;
@@ -224,7 +224,7 @@ button.active {
 }
 .container .project-img .text-container {
   padding: 1rem;
-  text-align: left;
+  text-align: justify;
 }
 .container h1 {
   padding-bottom: 1rem;
