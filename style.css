@@ -161,7 +161,7 @@ button.active {
 .container .about-container.active {
   border-radius: 50px;
   background: #150e0e;
-  box-shadow: inset 20px 20px 40px #100b0b, inset -20px -20px 40px #1a1111;
+  box-shadow: inset 5px 5px 10px #aaaec4, inset -5px -5px 10px #aaaec4;
   color: white;
 }
 .container .about-container .mySkills {
@@ -219,12 +219,12 @@ button.active {
 }
 .container .project-container.active .project-img {
   background: #150e0e;
-  box-shadow: inset 20px 20px 40px #100b0b, inset -20px -20px 40px #1a1111;
+  box-shadow: inset 5px 5px 10px #aaaec4, inset -5px -5px 10px #aaaec4;
   color: white;
 }
 .container .project-img .text-container {
   padding: 1rem;
-  text-align: justify;
+  text-align: right;
 }
 .container h1 {
   padding-bottom: 1rem;
@@ -271,12 +271,11 @@ button.active {
 }
 .container .contact {
   background-color: black;
+  
   padding: 1rem;
   margin-top: 2rem;
 }
-.container .contact.active {
-  background-color: white;
-}
+
 .container .contact form {
   text-align: center;
   border: 1px solid white;
