@@ -10,11 +10,12 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  font-family: "Archivo", sans-serif;
   position: relative;
   text-align: center;
-  background: #eaecf9;
+  background: white;
   transition: background-color 0.3s ease, color 0.3s ease;
+  color: #323743ff;
 }
 .container {
   width: 100vw;
@@ -23,7 +24,7 @@ body {
   transition: background-color 0.3s ease, color 0.3s ease;
 }
 body.active {
-  background-color: #121212;
+  background-color: #323743ff;
   color: #f5f5f5;
 }
 nav {
@@ -49,7 +50,7 @@ nav {
   }
 }
 .container nav .toggleMode label {
-  background-color: black;
+  background-color: #323743ff;
   width: 50px;
   height: 30px;
   position: absolute;
@@ -75,13 +76,13 @@ nav {
 }
 #mode:checked + label .ball {
   transform: translateX(20px);
-  background-color: black;
+  background-color: #323743ff;
 }
 #mode:checked + label {
   background-color: white;
 }
 #mode:checked + label i {
-  color: black;
+  color: #323743ff;
 }
 label i {
   color: white;
@@ -106,13 +107,12 @@ label i {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  /* top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%); */
+  row-gap: 1rem;
   z-index: 2;
 }
 .name-container .intro-text {
   font-size: 1.5rem;
+  font-weight: 700;
   color: #555;
 }
 body.active .name-container .intro-text,
@@ -124,7 +124,6 @@ body.active .name-container .tagline {
 .name-container .name {
   font-size: 2rem;
   font-weight: 700;
-  color: #000;
 }
 
 body.active .name-container .name {
@@ -133,19 +132,17 @@ body.active .name-container .name {
 
 .name-container .role {
   font-size: 1rem;
-  color: #444;
-  margin-top: 0.5rem;
+  font-weight: 600;
 }
 
 .name-container .tagline {
-  margin: 1rem 0;
   font-size: 1.1rem;
   color: #555;
   line-height: 1.6;
+  font-weight: 600;
 }
 
 .name-container .intro-buttons {
-  margin-top: 1.5rem;
   display: flex;
 
   gap: 1rem;
@@ -162,15 +159,14 @@ button:hover {
   height: 100%;
   top: 0;
   left: 0;
-  animation: rotate 30s linear infinite; /* smoother slower rotation */
+  animation: rotate 30s linear infinite;
   transform-origin: center center;
   display: flex;
   align-items: center;
   justify-content: center;
-  opacity: 0.5;
+  opacity: 0.3;
 }
 
-/* Icons */
 .tech-icons img {
   position: absolute;
   width: 60px;
@@ -182,10 +178,9 @@ button:hover {
   transition: transform 0.4s ease, filter 0.3s ease, box-shadow 0.4s ease;
   filter: grayscale(80%);
   cursor: pointer;
-  /* z-index: 2; */
+  border: 1px solid #323743ff;
 }
 
-/* Hover Effect */
 .tech-icons img:hover {
   filter: grayscale(0%);
   transform: scale(1.2);
@@ -197,31 +192,35 @@ button:hover {
 }
 
 .tech-icons img:nth-child(2) {
-  transform: translate(-50%, -50%) rotate(72deg) translate(120px) rotate(-72deg);
+  transform: translate(-50%, -50%) rotate(60deg) translate(120px) rotate(-60deg);
 }
 
 .tech-icons img:nth-child(3) {
-  transform: translate(-50%, -50%) rotate(144deg) translate(120px)
-    rotate(-144deg);
+  transform: translate(-50%, -50%) rotate(120deg) translate(120px)
+    rotate(-120deg);
 }
 
 .tech-icons img:nth-child(4) {
-  transform: translate(-50%, -50%) rotate(216deg) translate(120px)
-    rotate(-216deg);
+  transform: translate(-50%, -50%) rotate(180deg) translate(120px)
+    rotate(-180deg);
 }
 
 .tech-icons img:nth-child(5) {
-  transform: translate(-50%, -50%) rotate(288deg) translate(120px)
-    rotate(-288deg);
+  transform: translate(-50%, -50%) rotate(240deg) translate(120px)
+    rotate(-240deg);
 }
 .tech-icons img:nth-child(6) {
+  transform: translate(-50%, -50%) rotate(300deg) translate(120px)
+    rotate(-300deg);
+}
+/* .tech-icons img:nth-child(6) {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
   background: #fff;
   box-shadow: 0 0 20px rgba(0, 173, 255, 0.3);
   animation: pulse 2s infinite ease-in-out;
-}
+} */
 
 @keyframes rotate {
   0% {
@@ -253,7 +252,7 @@ button:hover {
   z-index: 100;
 }
 .container .nav-container.active {
-  background-color: black;
+  background-color: #323743ff;
   color: white;
   /* box-shadow: 20px 20px 60px #232222, -20px -20px 60px #2f2e2e; */
 }
@@ -265,7 +264,7 @@ button:hover {
   gap: 0.5rem;
 }
 .container .nav-container ul a {
-  color: black;
+  color: #323743ff;
   font-size: 1.2rem;
   font-weight: 600;
 }
@@ -273,10 +272,10 @@ button:hover {
   color: white;
 }
 button {
-  background-color: black;
+  background-color: #323743ff;
   color: white;
   margin: 1rem 0;
-  padding: 0.5rem 0.7rem;
+  padding: 1rem 1.5rem;
   border-top-left-radius: 0.5rem;
   border-bottom-right-radius: 0.5rem;
   letter-spacing: 2px;
@@ -286,15 +285,13 @@ button {
 }
 button.active {
   background-color: white;
-  color: black;
+  color: #323743ff;
 }
-.resume {
-  margin-right: 1rem;
-}
+
 .about-container {
   max-width: 800px;
   margin: auto;
-  background: #f7f9fc;
+  background: #f5fcff;
   padding: 2rem;
   border-radius: 10px;
   transition: background-color 0.3s ease, color 0.3s ease;
@@ -305,72 +302,58 @@ button.active {
   line-height: 1.7;
   color: #444;
   margin-bottom: 1rem;
+  font-weight: 600;
 }
 
-body.active .about-container p,
-body.active .project-container .text-container p {
-  color: #e0e0e0;
-}
-
-body.active h1,
-body.active h2,
-body.active h3 {
-  color: #ffffff;
-}
 body.active .about-container {
-  background: #1f1f1f;
-  color: #fff;
+  /* background: rgb(85, 94, 113); */
+  color: black;
+  /* box-shadow: 0px 0px 32px 0px rgba(255, 255, 255, 0.05);  */
 }
 
 .about-container .mySkills {
   margin-top: 2rem;
 }
-.about-container .mySkills h4 {
-  margin-bottom: 2rem;
+.about-container .mySkills h4,
+.about-container h2 {
+  font-weight: bold;
+  font-size: 2rem;
+  margin-bottom: 1.5rem;
 }
 
 .about-container .skills {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  gap: 1rem;
-  text-align: center;
-}
-
-.about-container .skills i {
-  margin-right: 0.5rem;
-  color: #333;
-  font-size: 1.5rem;
-}
-
-body.active .about-container .skills i {
-  color: #fff;
+  text-align: left;
+  line-height: 1.5;
 }
 
 .container .project-container {
-  /* height: 600px;
-  overflow-y: scroll; */
   padding: 4rem 1rem 2rem 1rem;
-  background: #eaecf9;
 }
-.container .project-container.active {
-  background: rgb(6, 6, 6);
+.container .project-container h1 {
+  padding-bottom: 2rem;
+  font-weight: bold;
+  font-size: 3rem;
 }
+
 .tech-stack {
   display: flex;
   gap: 0.5rem;
   margin-top: 0.5rem;
+  justify-content: center;
+  align-items: center;
 }
 
 .tech-stack span {
-  background: #ececec;
+  background: #dddcdc;
   color: #333;
   padding: 0.3rem 0.5rem;
   border-radius: 5px;
   font-size: 0.8rem;
+  font-weight: 600;
 }
 
 body.active .tech-stack span {
-  background: #4db6ff;
+  /* background: #4db6ff; */
   color: #121212;
 }
 
@@ -391,9 +374,9 @@ body.active .tech-stack span {
   overflow-x: hidden;
 
   border-radius: 20px;
-  background: #dadffb;
+  background: white;
+  box-shadow: 0px 0px 32px 0px rgba(0, 0, 0, 0.15);
 
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1), 0 2px 4px rgba(0, 0, 0, 0.05);
   transition: all 0.3s ease-in-out;
 }
 .container .project-container .project-img:hover {
@@ -402,8 +385,10 @@ body.active .tech-stack span {
 }
 
 .container .project-container.active .project-img {
-  background: #1f1f1f;
-  box-shadow: 0 4px 10px rgba(255, 255, 255, 0.05), 0 0 15px rgba(0, 0, 0, 0.6);
+  background: #323743ff;
+  box-shadow: 0px 0px 32px 0px rgba(255, 255, 255, 0.05);
+
+  /* box-shadow: 0 4px 10px rgba(255, 255, 255, 0.05), 0 0 15px rgba(0, 0, 0, 0.6); */
   transition: all 0.3s ease-in-out;
 }
 .container .project-container.active .project-img:hover {
@@ -413,20 +398,18 @@ body.active .tech-stack span {
 
 .container .project-img .text-container {
   padding: 1rem 0;
+  display: flex;
+  flex-direction: column;
+  row-gap: 1rem;
 }
 .project-img h3 {
   font-size: 1.4rem;
   font-weight: 600;
   margin-bottom: 0.3rem;
-  color: #222;
 }
-.container h1 {
-  padding-bottom: 1rem;
-}
-
 .container .project-img .text-container p {
   font-size: 1rem;
-  color: #555;
+  font-weight: 600;
   margin-bottom: 0.5rem;
   line-height: 1.4;
 }
@@ -436,7 +419,7 @@ body.active .tech-stack span {
 
 .container .project-img .git {
   position: absolute;
-  background-color: black;
+  background-color: #323743ff;
   top: 30%;
   right: 0;
   padding: 0.5rem 1rem;
@@ -448,7 +431,7 @@ body.active .tech-stack span {
 
 .container .project-img .netlify {
   position: absolute;
-  background-color: black;
+  background-color: #323743ff;
   top: 50%;
   right: 0;
   padding: 0.5rem 1rem;
@@ -465,7 +448,7 @@ body.active .tech-stack span {
   transform: translateX(0);
 }
 .container .contact {
-  background-color: black;
+  background-color: #323743ff;
 
   padding: 1rem;
   margin-top: 2rem;
@@ -491,7 +474,7 @@ textarea {
 }
 .container .contact-btn {
   background-color: white;
-  color: black;
+  color: #323743ff;
   margin: 0;
   padding: 0.7rem 2rem;
   font-size: 1.5rem;
@@ -502,7 +485,7 @@ textarea {
   background-color: rgb(234, 236, 249, 0.9);
 }
 .container .social {
-  background-color: black;
+  background-color: #323743ff;
   font-size: 2rem;
   font-weight: 600;
   margin-top: 2rem;
@@ -519,7 +502,7 @@ textarea {
   color: white;
 }
 .container .social.active ul a {
-  color: black;
+  color: #323743ff;
 }
 @media (min-width: 768px) {
   .container main .introduction {
@@ -556,16 +539,16 @@ textarea {
     background-color: white;
   }
   .ball {
-    background-color: black;
+    background-color: #323743ff;
   }
   label i {
-    color: black;
+    color: #323743ff;
   }
   #mode:checked + label .ball {
     background-color: white;
   }
   #mode:checked + label {
-    background-color: black;
+    background-color: #323743ff;
   }
   #mode:checked + label i {
     color: white;
@@ -588,6 +571,9 @@ textarea {
   .name-container .role {
     font-size: 1.5rem;
   }
+  button {
+    font-size: 1.5rem;
+  }
   .container .nav-container ul {
     display: block;
   }
@@ -596,7 +582,7 @@ textarea {
     right: 0;
     top: 0;
     bottom: 0;
-    background-color: black;
+    background-color: #323743ff;
   }
   .container .nav-container.active {
     background-color: white;
@@ -610,11 +596,9 @@ textarea {
     color: white;
   }
   .container .nav-container.active ul a i {
-    color: black;
+    color: #323743ff;
   }
-  .container .about-container .skills {
-    grid-template-columns: repeat(3, minmax(0, 1fr));
-  }
+
   .container .project {
     width: 80vw;
     grid-template-columns: repeat(3, minmax(0, 1fr));
